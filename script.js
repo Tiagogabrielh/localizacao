@@ -1,6 +1,9 @@
 var lat = JSON.parse(localStorage.getItem("latitude")) || [];
 var long = JSON.parse(localStorage.getItem("longitude")) || [];
 var ind = JSON.parse(localStorage.getItem("indice")) || 0;
+localStorage.setItem("latitude", JSON.stringify([]))
+localStorage.setItem("longitude", JSON.stringify([]))
+localStorage.setItem("indice", JSON.stringify(0))    
 
 var ul = document.getElementById('lista__id');
 console.log(ul)
